@@ -1,84 +1,224 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #111;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.global-notification {
+  background-color: #0052cc;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.global-notification a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0052cc;
+  text-decoration: none;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  position: relative;
+}
+
+.menu-link.active {
+  border-bottom: 2px solid #0052cc;
+}
+
+.header-right-links a,
+.header-right-links button {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.contact-info {
+  padding: 60px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 16px;
+}
+
+.contact-info-item {
+  flex: 1 1 300px;
+}
+
+.contact-info strong {
+  font-size: 20px;
+  color: #0052cc;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-streets,
+.contact-date,
+.contact-info p {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+.contact-informations a {
+  display: block;
+  color: #0052cc;
+  text-decoration: none;
+  margin: 4px 0;
+  font-weight: 500;
+}
+
+.footer-logo {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.footer-logo .logo {
+  font-size: 22px;
+  color: #0052cc;
+  text-decoration: none;
+}
+
+.footer-contact {
+  text-align: center;
+  padding: 10px 0 40px;
+  font-size: 15px;
+}
+
+.footer-contact a {
+  color: #0052cc;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+
+/* Custom Contact Bottom Section */
 .contact-bottom {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 
 .contact-bottom .contact-texts {
-    width: 75%;
+  width: 75%;
 }
 
 .contact-bottom .contact-texts h4 {
-    color: #ED5151;
-    font-weight: 500;
+  color: #ED5151;
+  font-weight: 500;
 }
 
 .contact-bottom .contact-texts h2 {
-    font-size: 40px;
-    font-weight: 600;
+  font-size: 40px;
+  font-weight: 600;
 }
-
 
 .contact-bottom .contact-texts p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-
 .contact-bottom .contact-elements {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
 }
 
 .contact-bottom .contact-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .contact-bottom .contact-form span {
-    color: #e51414;
+  color: #e51414;
 }
 
-.contact-bottom .contact-form>div {
-    display: flex;
-    flex-direction: column;
-    flex-basis: calc(50% - 10px);
-    font-size: 14px;
-    row-gap: 4px;
+.contact-bottom .contact-form > div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 10px);
+  font-size: 14px;
+  row-gap: 4px;
 }
 
-
-.contact-bottom .contact-form>div:nth-child(3),
-.contact-bottom .contact-form>div:nth-child(4) {
-    flex-basis: 100%;
+.contact-bottom .contact-form > div:nth-child(3),
+.contact-bottom .contact-form > div:nth-child(4) {
+  flex-basis: 100%;
 }
 
 .contact-bottom .contact-form .form-button {
-    background-color: black;
-    color: white;
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-bottom .contact-form .form-button:hover {
+  background-color: #ED5151;
 }
 
 .contact-bottom .contact-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  flex-basis: 50%;
 }
 
 .contact-bottom .contact-info-item {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .contact-info-item .contact-streets {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .contact-info .contact-informations {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .contact-info .contact-date {
-    margin-top: 15px;
+  margin-top: 15px;
 }
